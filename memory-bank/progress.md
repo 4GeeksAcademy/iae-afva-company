@@ -81,3 +81,21 @@ La estructura actual corresponde a una plantilla: no hay aplicaciones ejecutable
 **Validación:** comprobados estructura/labels/atributos, `node --check`, límites funcionales de los seis campos, corrección de errores, envío inválido y válido, reset e HTTP local de HTML/JS. No se realizó revisión visual, prueba real de teclado ni inspección de red en navegador por falta de navegador/Playwright.
 
 **Próximos pasos:** completar revisión visual y de teclado, inspección de red y nuevo ciclo tras reset en navegador; documentar CA-013 antes de cerrar SPEC-002.
+
+## Actualización de progreso
+
+**Fecha:** 2026-11-11
+
+**Resumen:** Implementado `01-domain-models-and-utilities`: nueve modelos tipados, operaciones genéricas de colecciones, búsquedas, agregaciones y KPIs HealthCore, validaciones de las entidades y tratamiento explícito de país, moneda, zona horaria y conversión hipotética. El checklist se alineó con RF-07 y CA-01 a CA-20.
+
+**Validación:** La comprobación TypeScript estricta con `tsc` pasó; los diagnósticos del editor no reportaron errores. Las aserciones sintéticas de colecciones, búsquedas, fórmulas, validaciones, referencias, fechas, segmentación monetaria y conversión pasaron. No hay `tsconfig.json` ni runner de pruebas para esta aplicación; se usaron herramientas temporales sin añadir configuración ni dependencias al repositorio.
+
+**Próximos pasos:** Integrar esta biblioteca en un consumidor cuando se defina; la integración queda fuera del alcance de este hito.
+
+## Actualización de progreso
+
+**Fecha:** 2026-11-11
+
+**Resumen:** Aplanada la estructura del Hito 3: modelos, utilidades y especificaciones quedaron directamente bajo el único directorio `src/`. Se actualizaron el plan, el comando de validación y la documentación de arquitectura.
+
+**Validación:** El comando TypeScript estricto actualizado pasó con los seis archivos TypeScript restantes del repositorio.
